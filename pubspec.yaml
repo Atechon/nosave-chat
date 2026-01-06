@@ -1,0 +1,53 @@
+name: direct_chat_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  country_code_picker: ^3.0.0
+  url_launcher: ^6.3.0
+  shared_preferences: ^2.3.0
+  share_plus: ^12.0.1
+  google_mobile_ads: ^7.0.0
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^4.0.0  # Recommended for code quality; version updated to latest stable
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"  # Use transparent foreground
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  adaptive_icon_background: "#00A8A8"  # Your teal – keeps solid color behind transparent parts
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
+
+flutter_native_splash:
+  color: "#036580"  # Your primary color for pre-Android 12 splash background
+  image: assets/icon/icon.png  # Your logo (centered on the background)
+  android: true
+  ios: true  # If you support iOS
+  android_12:  # For Android 12+ (uses icon-centered splash to match system behavior)
+    image: assets/icon/icon.png
+    color: "#036580"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/whatsapp_icon.png
+    - assets/icons/whatsapp_business_icon.png
+    - assets/icons/telegram_icon.png
+    - assets/icons/bg.png
+    - assets/icon/icon.png
